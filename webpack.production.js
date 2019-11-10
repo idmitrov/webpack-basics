@@ -1,7 +1,8 @@
-const webpackMerge = require('webpack-merge');
-const webpackBase = require('./webpack.base');
 const path = require('path');
+
+const webpackMerge = require('webpack-merge');
 const WebpackCleanupPlugin = require('webpack-cleanup-plugin');
+const webpackBase = require('./webpack.base');
 
 module.exports = webpackMerge(webpackBase, {
 	output: {
